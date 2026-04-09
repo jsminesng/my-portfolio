@@ -6,7 +6,7 @@
     <title>Seungeun's portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -17,7 +17,7 @@
         <nav class="nav">
           <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#interests">Interests</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact Me</a></li>
           </ul>
@@ -55,27 +55,17 @@
             <div class="about-text">
               <h3>Hello! I'm Seungeun Song</h3>
               <p>
-                I am currently enrolled in the Full Stack Web Development
-                program at Kookmin University. Although I am relatively new to
-                coding, I am deeply committed to mastering emerging technologies
-                and applying them to real world projects.
-              </p>
-              <br />
-              <p>
-                Over the course of 13 weeks, I am gaining hands-on experience
-                with a broad spectrum of technologies from HTML, CSS, and
-                JavaScript to React and Node.js with the ultimate goal of
-                building fully functional, user-centered web applications.
+                Full-stack engineer focused on building AI-driven products,
+                experienced in rapid prototyping and end-to-end development
+                using modern web technologies. Leverages AI-assisted workflows
+                to accelerate development, iterate quickly, and deliver
+                production-ready systems.
               </p>
 
               <div class="stats">
                 <div class="stat-item">
                   <h4>Major</h4>
-                  <p>Japanese Studies & Computer Science</p>
-                </div>
-                <div class="stat-item">
-                  <h4>Year</h4>
-                  <p>Senior</p>
+                  <p>Computer Science & Japanese Studies</p>
                 </div>
                 <div class="stat-item">
                   <h4>Goal</h4>
@@ -87,43 +77,83 @@
         </div>
       </section>
 
-      <!-- Interests Section -->
-      <section id="interests" class="interests">
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
         <div class="container">
-          <h2 class="section-title">Interests</h2>
-          <div class="interests-grid">
-            <div class="interest-card">
-              <div class="interest-icon">💻</div>
-              <h3>web development</h3>
-              <p>
-                I am interested in building user-friendly websites and web
-                applications.
-              </p>
-            </div>
-            <div class="interest-card">
-              <div class="interest-icon">🎨</div>
-              <h3>UI/UX design</h3>
-              <p>
-                I want to create intuitive and beautiful user interfaces that
-                deliver a great user experience.
-              </p>
-            </div>
-            <div class="interest-card">
-              <div class="interest-icon">🚀</div>
-              <h3>Entrepreneur</h3>
-              <p>
-                I dream of starting a company that solves social problems
-                through technology.
-              </p>
-            </div>
-            <div class="interest-card">
-              <div class="interest-icon">🤖</div>
-              <h3>AI & Data</h3>
-              <p>
-                I am passionate about developing intelligent web services using
-                AI and data analysis.
-              </p>
-            </div>
+          <h2 class="section-title projects-title">Projects</h2>
+          <div class="projects-list">
+            <article class="project-card">
+              <div class="project-content">
+                <p class="project-date">Jan 2026 - Current (Seoul)</p>
+                <h3>Dipin</h3>
+                <div class="project-tags">
+                  <span class="project-tag">React</span>
+                  <span class="project-tag">FastAPI</span>
+                  <span class="project-tag">Next.js</span>
+                  <span class="project-tag">AWS</span>
+                  <span class="project-tag">Full-Stack</span>
+                </div>
+                <p class="project-description">
+                  AI-based talent evaluation platform assessing real-world
+                  problem-solving through scenario tasks and evaluation reports.
+                </p>
+                <a
+                  href="https://www.dipin.site/"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Project Link
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-content">
+                <p class="project-date">Oct 2025 - Dec 2025 (Irvine)</p>
+                <h3>BiasTrade</h3>
+                <div class="project-tags">
+                  <span class="project-tag">React</span>
+                  <span class="project-tag">Next.js</span>
+                  <span class="project-tag">Supabase</span>
+                  <span class="project-tag">Marketplace</span>
+                </div>
+                <p class="project-description">
+                  K-pop photocard trading marketplace designed for secure,
+                  verified user-to-user transactions and real-world trading
+                  flows.
+                </p>
+                <a
+                  href="https://www.biastrade.com/home"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Project Link
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-content">
+                <p class="project-date">Sep 2025 - Nov 2025 (Irvine)</p>
+                <h3>VocalCoach</h3>
+                <div class="project-tags">
+                  <span class="project-tag">React</span>
+                  <span class="project-tag">Next.js</span>
+                  <span class="project-tag">FastAPI</span>
+                  <span class="project-tag">Audio Processing</span>
+                  <span class="project-tag">Real-time Feedback</span>
+                </div>
+                <p class="project-description">
+                  AI-powered vocal training web app that evaluates vocal
+                  performance and provides structured, real-time feedback to
+                  users.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -131,42 +161,70 @@
       <!-- Skills Section -->
       <section id="skills" class="skills">
         <div class="container">
-          <h2 class="section-title">Skills</h2>
-          <div class="skills-content">
-            <div class="skill-category">
-              <h3>currently learning</h3>
-              <div class="skill-list">
-                <div class="skill-item beginner">
-                  <span class="skill-name">HTML</span>
-                  <span class="skill-level">beginner</span>
-                </div>
-                <div class="skill-item beginner">
-                  <span class="skill-name">CSS</span>
-                  <span class="skill-level">beginner</span>
-                </div>
-                <div class="skill-item beginner">
-                  <span class="skill-name">JavaScript</span>
-                  <span class="skill-level">beginner</span>
-                </div>
+          <h2 class="section-title skills-title">Skills</h2>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Programming Languages</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
               </div>
-            </div>
-            <div class="skill-category">
-              <h3>upcoming skills</h3>
-              <div class="skill-list">
-                <div class="skill-item future">
-                  <span class="skill-name">React</span>
-                  <span class="skill-level">planned</span>
-                </div>
-                <div class="skill-item future">
-                  <span class="skill-name">Node.js</span>
-                  <span class="skill-level">planned</span>
-                </div>
-                <div class="skill-item future">
-                  <span class="skill-name">React Native</span>
-                  <span class="skill-level">planned</span>
-                </div>
+            </article>
+
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">Tailwind CSS</span>
               </div>
-            </div>
+            </article>
+
+            <article class="skill-card">
+              <h3>Backend</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Supabase</span>
+              </div>
+            </article>
+
+            <article class="skill-card">
+              <h3>Cloud &amp; DevOps</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Lambda</span>
+                <span class="skill-tag">S3</span>
+                <span class="skill-tag">API Gateway</span>
+                <span class="skill-tag">Bedrock</span>
+                <span class="skill-tag">Serverless</span>
+                <span class="skill-tag">Docker</span>
+              </div>
+            </article>
+
+            <article class="skill-card">
+              <h3>AI Tools</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Claude Code</span>
+                <span class="skill-tag">Cursor</span>
+                <span class="skill-tag">ChatGPT Codex</span>
+                <span class="skill-tag">Gemini CLI</span>
+                <span class="skill-tag">Antigravity</span>
+              </div>
+            </article>
+
+            <article class="skill-card">
+              <h3>Languages</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Korean (Native)</span>
+                <span class="skill-tag">English (Fluent)</span>
+                <span class="skill-tag">Japanese (Fluent)</span>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -177,12 +235,12 @@
           <h2 class="section-title2">Contact</h2>
           <div class="contact-content">
             <div class="contact-info">
-              <h3>Let’s Grow Together! 🌱</h3>
+              <h3>Let’s Grow Together!</h3>
               <p>I’d love to connect and collaborate with fellow learners.</p>
 
               <div class="contact-links">
                 <a href="mailto: seungeunsong2@gmail.com" class="contact-link">
-                  <span class="contact-icon">✉️</span>
+                  <span class="contact-icon"></span>
                   <span>seungeunsong2@gmail.com</span>
                 </a>
                 <a
@@ -190,7 +248,7 @@
                   class="contact-link"
                   target="_blank"
                 >
-                  <span class="contact-icon">🐙</span>
+                  <span class="contact-icon"></span>
                   <span>GitHub</span>
                 </a>
                 <a
@@ -198,7 +256,7 @@
                   class="contact-link"
                   target="_blank"
                 >
-                  <span class="contact-icon">💼</span>
+                  <span class="contact-icon"></span>
                   <span>LinkedIn</span>
                 </a>
               </div>
@@ -225,7 +283,6 @@
     <footer class="footer">
       <div class="container">
         <p>&copy; 2025 Seungeun Song. All rights reserved.</p>
-        <p>Kookmin University · Global PBL Fall 2025 · Week 1 Project</p>
       </div>
     </footer>
 

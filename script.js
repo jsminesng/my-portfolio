@@ -112,7 +112,7 @@ function initScrollAnimations() {
 
   // 애니메이션할 요소들 관찰
   const animateElements = document.querySelectorAll(
-    ".interest-card, .stat-item, .skill-category"
+    ".interest-card, .stat-item, .skill-category",
   );
   animateElements.forEach((el) => observer.observe(el));
 }
@@ -209,7 +209,12 @@ function initTypingEffect() {
   if (!typingElement) return;
 
   const originalText = typingElement.textContent;
-  const typingTexts = [originalText, "developer", "learner", "challenger"];
+  const typingTexts = [
+    originalText,
+    "a developer",
+    "a learner",
+    "a challenger",
+  ];
   let currentIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
@@ -301,7 +306,7 @@ function initThemeToggle() {
 
     showNotification(
       isDarkMode ? "Dark mode has been enabled" : "Light mode has been enabled",
-      "info"
+      "info",
     );
   });
 }
