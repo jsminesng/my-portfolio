@@ -7,17 +7,18 @@
 
 /* Root Variables */
 :root {
-  --primary-color: #000000;
-  --secondary-color: #333333;
-  --accent-color: white;
-  --text-dark: #000000;
-  --text-light: #444444;
-  --text-white: #ffffff;
-  --background-light: #f9f9f9;
-  --background-white: #ffffff;
-  --border-light: #e5e5e5;
-  --shadow-light: rgba(0, 0, 0, 0.05);
-  --shadow-medium: rgba(0, 0, 0, 0.2);
+  --primary-color: #1c1c1c;
+  --secondary-color: #4a4a4a;
+  --accent-color: #f5f5f5;
+  --text-dark: #1c1c1c;
+  --text-light: #5c5c5c;
+  --text-white: #fafafa;
+  --background-light: #f5f5f5;
+  --background-white: #fafafa;
+  --border-light: #e6e6e6;
+  --shadow-light: rgba(28, 28, 28, 0.05);
+  --shadow-medium: rgba(28, 28, 28, 0.14);
+  --shadow: 0 10px 28px rgba(28, 28, 28, 0.12);
   --border-radius: 8px;
   --border-radius-large: 12px;
 }
@@ -212,14 +213,35 @@ select {
   text-decoration: none;
   border-radius: var(--border-radius);
   font-weight: 600;
+  border: 1px solid var(--primary-color);
   transition:
     transform 0.3s ease,
-    box-shadow 0.3s ease;
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: var(--text-dark);
+  border-color: var(--border-light);
+}
+
+.cta-button.secondary:hover {
+  background: var(--text-dark);
+  color: var(--text-white);
+  border-color: var(--text-dark);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .profile-placeholder {
@@ -326,8 +348,8 @@ select {
   background: var(--background-white);
   padding: 2rem;
   border-radius: 24px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(28, 28, 28, 0.06);
+  box-shadow: 0 8px 24px rgba(28, 28, 28, 0.04);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -335,7 +357,7 @@ select {
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 12px 30px rgba(28, 28, 28, 0.07);
 }
 
 .project-content {
@@ -393,7 +415,7 @@ select {
   min-height: 30px;
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
-  background: #f6f6f6;
+  background: #f3f3f3;
   border: 1px solid #ececec;
   font-size: 0.76rem;
   font-weight: 600;
@@ -444,8 +466,8 @@ select {
   background: var(--background-white);
   padding: 2rem;
   border-radius: 24px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(28, 28, 28, 0.06);
+  box-shadow: 0 8px 24px rgba(28, 28, 28, 0.04);
 }
 
 .education-header {
@@ -495,8 +517,8 @@ select {
   background: var(--background-white);
   padding: 1.7rem;
   border-radius: 28px;
-  border: 1px solid rgba(0, 0, 0, 0.04);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(28, 28, 28, 0.04);
+  box-shadow: 0 14px 30px rgba(28, 28, 28, 0.05);
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
@@ -533,11 +555,11 @@ select {
   min-height: 34px;
   padding: 0.45rem 0.85rem;
   border-radius: 999px;
-  background: #f6f6f6;
+  background: #f3f3f3;
   border: 1px solid #ececec;
   font-size: 0.82rem;
   font-weight: 600;
-  color: #222222;
+  color: #2a2a2a;
   white-space: nowrap;
 }
 
@@ -589,7 +611,7 @@ select {
 }
 
 .contact-link:hover {
-  background: #f0f0f0;
+  background: #ececec;
   transform: translateX(10px);
 }
 
@@ -652,15 +674,18 @@ select {
 
 /* Footer */
 .footer {
-  background: var(--text-dark);
-  color: var(--text-white);
+  background: transparent;
+  color: var(--text-light);
   text-align: center;
-  padding: 2rem 0;
+  padding: 1.25rem 0 1.5rem;
+  border-top: 1px solid var(--border-light);
 }
 
 .footer p {
-  margin-bottom: 0.5rem;
-  opacity: 0.8;
+  margin: 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.01em;
+  opacity: 0.75;
 }
 
 /* Responsive Design */
@@ -868,7 +893,7 @@ select {
   font-weight: 600;
   font-size: 0.95rem;
   border: 1px solid #ececec;
-  background: #f6f6f6;
+  background: #f3f3f3;
   color: var(--text-dark);
 }
 
@@ -1082,7 +1107,7 @@ select {
   width: 100%;
   border-radius: 18px;
   border: 1px solid var(--border-light);
-  background: #111;
+  background: #1c1c1c;
   display: block;
 }
 
@@ -1173,13 +1198,13 @@ select {
   height: 44px;
   border: 1px solid #ececec;
   border-radius: 50%;
-  background: #ffffff;
-  color: #111111;
+  background: #fafafa;
+  color: #1c1c1c;
   font-size: 1.8rem;
   line-height: 1;
   font-weight: 500;
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 14px rgba(28, 28, 28, 0.08);
   display: inline-flex;
   align-items: center;
   justify-content: center;

@@ -12,15 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // 3. 스크롤 애니메이션
   initScrollAnimations();
 
-  // 4. 폼 처리
-  initContactForm();
-
-  // 5. 타이핑 효과 (선택사항)
-  initTypingEffect();
-
-  // 6. 테마 토글 (선택사항)
-  //   initThemeToggle();
-});
+  // 4. 타이핑 효과 (선택사항)
+  initTypingEffect();});
 
 // 부드러운 스크롤 기능
 function initSmoothScrolling() {
