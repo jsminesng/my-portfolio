@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
   initScrollAnimations();
 
   // 4. 타이핑 효과 (선택사항)
-  initTypingEffect();});
+  initTypingEffect();
+});
 
 // 부드러운 스크롤 기능
 function initSmoothScrolling() {
