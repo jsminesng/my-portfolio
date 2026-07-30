@@ -2,3 +2,6 @@
 # Large local presentation source (slides are used on site)
 projects/assets/biastrade/biaspoca.pdf
 projects/assets/myoo/MYOO.pdf
+
+# Large local demo sources (compressed mp4 used on site)
+projects/assets/trendpulse/*.mov

@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrendPulse | Seungeun Song</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo"><a href="../index.html">Seungeun Song</a></h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#education">Education</a></li>
+            <li><a href="../index.html#skills">Skills</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="project-detail">
+      <div class="project-detail-container">
+        <a href="../index.html#projects" class="project-back"
+          >← Back to Projects</a
+        >
+
+        <h1>TrendPulse – AI Trend Intelligence for Travel Creators</h1>
+        <p class="project-detail-summary">
+          An AI-powered trend analysis platform for travel content creators that
+          collects online travel data, analyzes trends with AI, and delivers
+          insights and content ideas.
+        </p>
+
+        <div class="project-detail-actions">
+          <a href="#demo" class="project-detail-btn primary">Watch Demo</a>
+          <a href="#presentation" class="project-detail-btn">View PPT</a>
+        </div>
+
+        <section class="project-detail-section" id="overview">
+          <h2>Overview</h2>
+          <p>
+            TrendPulse is an AI-powered trend analysis platform designed for
+            travel content creators. The platform collects travel-related data
+            from online sources, analyzes trends with AI, and provides insights
+            and content ideas to help creators produce timely content.
+          </p>
+        </section>
+
+        <section class="project-detail-section" id="tech-stack">
+          <h2>Tech Stack</h2>
+          <div class="project-tags">
+            <span class="project-tag">AWS Lambda</span>
+            <span class="project-tag">EventBridge</span>
+            <span class="project-tag">Step Functions</span>
+            <span class="project-tag">S3</span>
+            <span class="project-tag">Amazon Bedrock</span>
+            <span class="project-tag">OpenSearch</span>
+            <span class="project-tag">API Gateway</span>
+            <span class="project-tag">Cognito</span>
+            <span class="project-tag">CloudFront</span>
+            <span class="project-tag">DynamoDB</span>
+          </div>
+        </section>
+
+        <section class="project-detail-section" id="architecture">
+          <h2>Architecture Diagram</h2>
+          <div class="architecture-stack">
+            <figure class="architecture-figure">
+              <img
+                src="assets/trendpulse/data_pipeline_architecture.png"
+                alt="TrendPulse data pipeline architecture"
+              />
+              <figcaption class="screenshot-caption">
+                <strong>Data Pipeline Architecture</strong>
+                <span
+                  >Scheduled collection, AI analysis, and OpenSearch
+                  indexing</span
+                >
+              </figcaption>
+            </figure>
+            <figure class="architecture-figure">
+              <img
+                src="assets/trendpulse/user-facing_architecture.png"
+                alt="TrendPulse user-facing architecture"
+              />
+              <figcaption class="screenshot-caption">
+                <strong>User-Facing Architecture</strong>
+                <span
+                  >CloudFront web app with API Gateway, Cognito, and Lambda</span
+                >
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="project-detail-section" id="system-flow">
+          <h2>Workflow</h2>
+          <ul class="flow-notes">
+            <li>Scheduled data collection from online platforms.</li>
+            <li>Data storage and preprocessing in AWS.</li>
+            <li>AI-powered trend analysis and indexing.</li>
+            <li>
+              Trend search and visualization through the web application.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="key-features">
+          <h2>Key Features</h2>
+          <ul>
+            <li>Scheduled trend data collection</li>
+            <li>AI-powered trend analysis</li>
+            <li>AI-generated content ideas</li>
+            <li>Travel trend search</li>
+            <li>AWS serverless architecture</li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="contributions">
+          <h2>My Contributions</h2>
+          <ul>
+            <li>
+              Contributed to the design of the overall AWS architecture for both
+              the data pipeline and user-facing services.
+            </li>
+            <li>
+              Designed a serverless data pipeline using EventBridge, Step
+              Functions, Lambda, S3, Bedrock, and OpenSearch.
+            </li>
+            <li>
+              Selected AWS services based on scalability, maintainability, and
+              cost considerations.
+            </li>
+            <li>
+              Estimated AWS infrastructure costs and evaluated deployment
+              strategies for the project.
+            </li>
+            <li>
+              Participated in technical discussions on cloud architecture and
+              system design.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="challenges">
+          <h2>Challenges</h2>
+          <ul>
+            <li>
+              Designing an event-driven architecture capable of handling
+              scheduled data processing workflows.
+            </li>
+            <li>
+              Selecting appropriate AWS services while balancing system
+              requirements and infrastructure costs.
+            </li>
+            <li>
+              Structuring a modular architecture that separates data processing
+              from user-facing services.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="learned">
+          <h2>What I Learned</h2>
+          <ul>
+            <li>
+              Learned how to design end-to-end serverless architectures on AWS.
+            </li>
+            <li>
+              Gained practical experience selecting AWS services based on
+              scalability, maintainability, and cost.
+            </li>
+            <li>
+              Improved my understanding of cloud architecture design and
+              event-driven systems.
+            </li>
+            <li>
+              Learned how to estimate cloud infrastructure costs during the
+              system design process.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="demo">
+          <h2>Demo Video</h2>
+          <div class="demo-stack">
+            <figure class="demo-figure">
+              <figcaption class="screenshot-caption">
+                <strong>Frontend Demo</strong>
+              </figcaption>
+              <video
+                class="demo-video"
+                controls
+                preload="metadata"
+                src="assets/trendpulse/front-final.mp4"
+              >
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+            <figure class="demo-figure">
+              <figcaption class="screenshot-caption">
+                <strong>AWS Architecture Demo</strong>
+              </figcaption>
+              <video
+                class="demo-video"
+                controls
+                preload="metadata"
+                src="assets/trendpulse/aws-final.mp4"
+              >
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+          </div>
+        </section>
+
+        <section class="project-detail-section" id="presentation">
+          <h2>Presentation</h2>
+          <div
+            class="slide-viewer"
+            data-slide-prefix="assets/trendpulse/aws/"
+            data-slide-count="22"
+            data-slide-pad="3"
+          >
+            <div class="slide-stage">
+              <button
+                type="button"
+                class="slide-nav-btn slide-nav-prev"
+                data-slide-prev
+                aria-label="Previous slide"
+              >
+                ‹
+              </button>
+              <div class="slide-frame">
+                <img
+                  class="slide-image"
+                  src="assets/trendpulse/aws/001.png"
+                  alt="TrendPulse presentation slide 1"
+                />
+              </div>
+              <button
+                type="button"
+                class="slide-nav-btn slide-nav-next"
+                data-slide-next
+                aria-label="Next slide"
+              >
+                ›
+              </button>
+            </div>
+            <div class="slide-counter">
+              <span data-slide-current>1</span> /
+              <span data-slide-total>22</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Seungeun Song. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".slide-viewer").forEach((viewer) => {
+        const prefix = viewer.dataset.slidePrefix;
+        const total = Number(viewer.dataset.slideCount || 0);
+        const padLen = Number(viewer.dataset.slidePad || 2);
+        const image = viewer.querySelector(".slide-image");
+        const currentEl = viewer.querySelector("[data-slide-current]");
+        const totalEl = viewer.querySelector("[data-slide-total]");
+        const prevBtn = viewer.querySelector("[data-slide-prev]");
+        const nextBtn = viewer.querySelector("[data-slide-next]");
+        let index = 1;
+
+        const pad = (n) => String(n).padStart(padLen, "0");
+
+        const render = () => {
+          image.src = `${prefix}${pad(index)}.png`;
+          image.alt = `TrendPulse presentation slide ${index}`;
+          currentEl.textContent = String(index);
+          totalEl.textContent = String(total);
+          prevBtn.disabled = index <= 1;
+          nextBtn.disabled = index >= total;
+        };
+
+        prevBtn.addEventListener("click", () => {
+          if (index > 1) {
+            index -= 1;
+            render();
+          }
+        });
+
+        nextBtn.addEventListener("click", () => {
+          if (index < total) {
+            index += 1;
+            render();
+          }
+        });
+
+        viewer.addEventListener("keydown", (event) => {
+          if (event.key === "ArrowLeft") prevBtn.click();
+          if (event.key === "ArrowRight") nextBtn.click();
+        });
+
+        viewer.tabIndex = 0;
+        render();
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const targetId = link.getAttribute("href").slice(1);
+          const target = document.getElementById(targetId);
+          if (!target) return;
+
+          event.preventDefault();
+          const header = document.querySelector(".header");
+          const offset = (header ? header.offsetHeight : 0) + 24;
+          const top =
+            target.getBoundingClientRect().top + window.scrollY - offset;
+
+          window.scrollTo({ top, behavior: "smooth" });
+          history.replaceState(null, "", `#${targetId}`);
+        });
+      });
+    </script>
+  </body>
+</html>
