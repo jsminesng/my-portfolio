@@ -46,15 +46,15 @@
         <section class="project-detail-section" id="overview">
           <h2>Overview</h2>
           <p>
-            Respondy is a desktop chat assistant that turns chat screenshots
-            into context-aware reply suggestions. Users upload screenshots,
-            review AI-generated responses, and keep conversation history for
-            faster follow-ups.
+            Respondy is an AI-powered desktop chat assistant that provides
+            real-time, context-aware reply suggestions from chat screenshots.
+            Users can upload screenshots, receive AI-generated responses, and
+            review conversation history within the desktop application.
           </p>
           <p>
-            The product focuses on making everyday messaging workflows faster by
-            combining screenshot analysis with Gemini-powered response
-            generation in a desktop Electron app.
+            The application streamlines everyday messaging by combining
+            real-time screenshot analysis with Gemini-powered response
+            generation in a desktop Electron environment.
           </p>
         </section>
 
@@ -73,52 +73,119 @@
         <section class="project-detail-section" id="architecture">
           <h2>Architecture Diagram</h2>
           <figure class="architecture-figure">
-            <div class="media-placeholder tall">
-              Architecture diagram coming soon<br />
-              Add file to
-              <code>projects/assets/respondy/architecture.png</code>
-            </div>
+            <img
+              src="assets/respondy/respondy_system_architecture.png"
+              alt="Respondy system architecture diagram"
+            />
           </figure>
         </section>
 
         <section class="project-detail-section" id="erd">
           <h2>ERD</h2>
           <figure class="architecture-figure">
-            <div class="media-placeholder tall">
-              ERD coming soon<br />
-              Add file to <code>projects/assets/respondy/erd.png</code>
-            </div>
+            <img src="assets/respondy/erd.png" alt="Respondy ERD diagram" />
           </figure>
         </section>
 
         <section class="project-detail-section" id="system-flow">
-          <h2>System Flow</h2>
-          <div class="media-placeholder tall">
-            System flow diagram coming soon<br />
-            Add file to
-            <code>projects/assets/respondy/system-flow.png</code>
-          </div>
+          <h2>Workflow</h2>
+          <figure class="architecture-figure">
+            <img
+              src="assets/respondy/system_flow.png"
+              alt="Respondy system flow"
+            />
+          </figure>
           <ul class="flow-notes">
-            <li>User uploads a chat screenshot from the desktop app.</li>
-            <li>Frontend sends the image to backend services via REST API.</li>
             <li>
-              The backend analyzes the screenshot and generates reply
-              suggestions with Gemini.
+              Users upload a chat screenshot through the desktop application.
             </li>
             <li>
-              Suggested replies and conversation history are shown in the UI.
+              The frontend sends the image to backend services via REST APIs.
+            </li>
+            <li>
+              The backend analyzes the screenshot in real time and generates
+              reply suggestions using Gemini.
+            </li>
+            <li>
+              Suggested replies and conversation history are displayed in the
+              desktop application.
             </li>
           </ul>
+        </section>
+
+        <section class="project-detail-section" id="product-walkthrough">
+          <h2>Product Walkthrough</h2>
+          <div class="screenshot-grid">
+            <figure class="screenshot-item full">
+              <img src="assets/respondy/home.png" alt="Respondy home screen" />
+              <figcaption class="screenshot-caption">
+                <strong>01 · Home</strong>
+                <span>Dashboard entry point for core Respondy workflows</span>
+              </figcaption>
+            </figure>
+
+            <figure class="screenshot-item full">
+              <img
+                src="assets/respondy/real_time.png"
+                alt="Respondy real-time analysis screen"
+              />
+              <figcaption class="screenshot-caption">
+                <strong>02 · Real-time Analysis</strong>
+                <span
+                  >Detect chat screens, analyze context, and recommend
+                  replies</span
+                >
+              </figcaption>
+            </figure>
+
+            <figure class="screenshot-item">
+              <img
+                src="assets/respondy/manual.png"
+                alt="Respondy manual input screen"
+              />
+              <figcaption class="screenshot-caption">
+                <strong>03 · Manual Input</strong>
+                <span
+                  >Enter situation and message context for AI reply
+                  suggestions</span
+                >
+              </figcaption>
+            </figure>
+
+            <figure class="screenshot-item">
+              <img
+                src="assets/respondy/AI_chat.png"
+                alt="Respondy AI chat screen"
+              />
+              <figcaption class="screenshot-caption">
+                <strong>04 · AI Chat</strong>
+                <span>Practice replies with a conversational AI partner</span>
+              </figcaption>
+            </figure>
+
+            <figure class="screenshot-item full">
+              <img
+                src="assets/respondy/mypage.png"
+                alt="Respondy my page screen"
+              />
+              <figcaption class="screenshot-caption">
+                <strong>05 · My Page</strong>
+                <span
+                  >Manage profile, analysis history, and contact personas</span
+                >
+              </figcaption>
+            </figure>
+          </div>
         </section>
 
         <section class="project-detail-section" id="key-features">
           <h2>Key Features</h2>
           <ul>
-            <li>Screenshot upload and analysis</li>
-            <li>Context-aware reply suggestions</li>
+            <li>Real-time screenshot analysis</li>
+            <li>Real-time AI reply suggestions</li>
             <li>Conversation history</li>
-            <li>Desktop Electron experience</li>
-            <li>REST API integration with AI backend</li>
+            <li>Desktop application built with Electron</li>
+            <li>REST API integration</li>
           </ul>
         </section>
 
@@ -129,16 +196,16 @@
               Developed the desktop frontend using Electron, Next.js, and React.
             </li>
             <li>
-              Built interfaces for screenshot upload, AI-generated reply
-              suggestions, and conversation history.
+              Implemented user interfaces for screenshot upload, AI-generated
+              reply suggestions, and conversation history.
             </li>
             <li>
-              Integrated REST APIs for screenshot analysis and AI-generated
-              responses.
+              Integrated REST APIs to communicate with backend services for
+              screenshot analysis and AI-generated responses.
             </li>
             <li>
-              Designed responsive and intuitive UI for a smoother desktop
-              experience.
+              Improved the desktop user experience by implementing responsive
+              and intuitive interfaces.
             </li>
           </ul>
         </section>
@@ -147,16 +214,16 @@
           <h2>Challenges</h2>
           <ul>
             <li>
-              Turning screenshot-based chat context into useful reply
-              suggestions without making the UI feel complicated.
+              Building a frontend that could display AI-generated replies with
+              minimal delay after screenshot upload.
             </li>
             <li>
-              Connecting Electron frontend flows with backend APIs for analysis
-              and response generation.
+              Integrating Electron with REST APIs while maintaining a smooth
+              desktop user experience.
             </li>
             <li>
-              Designing conversation history and suggestion UI that stays easy
-              to scan on desktop.
+              Managing asynchronous image uploads and response updates
+              efficiently.
             </li>
           </ul>
         </section>
@@ -165,16 +232,20 @@
           <h2>What I Learned</h2>
           <ul>
             <li>
-              How Electron + Next.js + React can work together for a desktop AI
-              product.
+              Learned how to build desktop applications using Electron, Next.js,
+              and React.
             </li>
             <li>
-              Practical patterns for screenshot-driven workflows and REST API
-              integration.
+              Gained practical experience integrating real-time REST API
+              workflows into a desktop application.
             </li>
             <li>
-              How to shape AI response UX so suggestions feel actionable instead
-              of noisy.
+              Improved my understanding of asynchronous state management and API
+              communication.
+            </li>
+            <li>
+              Learned how frontend applications interact with AI-powered backend
+              services.
             </li>
           </ul>
         </section>
@@ -182,19 +253,52 @@
         <section class="project-detail-section" id="demo">
           <h2>Demo Video</h2>
           <div class="demo-figure">
-            <div class="media-placeholder tall">
-              Demo video coming soon<br />
-              Add file to <code>projects/assets/respondy/demo.mp4</code>
-            </div>
+            <video
+              class="demo-video"
+              controls
+              preload="metadata"
+              src="assets/respondy/Capstone2026_04_demo.mp4"
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
         </section>
 
         <section class="project-detail-section" id="presentation">
-          <h2>Presentation (PPT)</h2>
-          <div class="resource-list">
-            <div class="resource-item">
-              <span>Project Presentation Deck</span>
-              <a href="#">Upload PPT / add link</a>
+          <h2>Presentation</h2>
+          <div
+            class="slide-viewer"
+            data-slide-prefix="assets/respondy/respondy_ppt/"
+            data-slide-files="1,2,3,4,5,6,7,8,12,13,14,15,16,26,27,28,29,30,31,32,33"
+          >
+            <div class="slide-stage">
+              <button
+                type="button"
+                class="slide-nav-btn slide-nav-prev"
+                data-slide-prev
+                aria-label="Previous slide"
+              >
+                ‹
+              </button>
+              <div class="slide-frame">
+                <img
+                  class="slide-image"
+                  src="assets/respondy/respondy_ppt/1.png"
+                  alt="Respondy presentation slide 1"
+                />
+              </div>
+              <button
+                type="button"
+                class="slide-nav-btn slide-nav-next"
+                data-slide-next
+                aria-label="Next slide"
+              >
+                ›
+              </button>
+            </div>
+            <div class="slide-counter">
+              <span data-slide-current>1</span> /
+              <span data-slide-total>21</span>
             </div>
           </div>
         </section>
@@ -206,5 +310,74 @@
         <p>&copy; 2026 Seungeun Song. All rights reserved.</p>
       </div>
     </footer>
+
+    <script>
+      document.querySelectorAll(".slide-viewer").forEach((viewer) => {
+        const prefix = viewer.dataset.slidePrefix;
+        const files = (viewer.dataset.slideFiles || "")
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean);
+        const total = files.length || Number(viewer.dataset.slideCount || 0);
+        const image = viewer.querySelector(".slide-image");
+        const currentEl = viewer.querySelector("[data-slide-current]");
+        const totalEl = viewer.querySelector("[data-slide-total]");
+        const prevBtn = viewer.querySelector("[data-slide-prev]");
+        const nextBtn = viewer.querySelector("[data-slide-next]");
+        let index = 1;
+
+        const pad = (n) => String(n).padStart(2, "0");
+
+        const render = () => {
+          image.src = files.length
+            ? `${prefix}${files[index - 1]}.png`
+            : `${prefix}${pad(index)}.png`;
+          image.alt = `Respondy presentation slide ${index}`;
+          currentEl.textContent = String(index);
+          totalEl.textContent = String(total);
+          prevBtn.disabled = index <= 1;
+          nextBtn.disabled = index >= total;
+        };
+
+        prevBtn.addEventListener("click", () => {
+          if (index > 1) {
+            index -= 1;
+            render();
+          }
+        });
+
+        nextBtn.addEventListener("click", () => {
+          if (index < total) {
+            index += 1;
+            render();
+          }
+        });
+
+        viewer.addEventListener("keydown", (event) => {
+          if (event.key === "ArrowLeft") prevBtn.click();
+          if (event.key === "ArrowRight") nextBtn.click();
+        });
+
+        viewer.tabIndex = 0;
+        render();
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const targetId = link.getAttribute("href").slice(1);
+          const target = document.getElementById(targetId);
+          if (!target) return;
+
+          event.preventDefault();
+          const header = document.querySelector(".header");
+          const offset = (header ? header.offsetHeight : 0) + 24;
+          const top =
+            target.getBoundingClientRect().top + window.scrollY - offset;
+
+          window.scrollTo({ top, behavior: "smooth" });
+          history.replaceState(null, "", `#${targetId}`);
+        });
+      });
+    </script>
   </body>
 </html>
