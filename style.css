@@ -813,7 +813,7 @@ select {
 .project-detail-container {
   max-width: 860px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 56px;
 }
 
 .project-back {
@@ -1004,6 +1004,7 @@ select {
   border-radius: 18px;
   border: 1px solid var(--border-light);
   background: #111;
+  display: block;
 }
 
 .resource-list {
@@ -1068,18 +1069,14 @@ select {
 
 .slide-stage {
   position: relative;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
 }
 
 .slide-frame {
-  flex: 1;
-  min-width: 0;
+  width: 100%;
   border: 1px solid var(--border-light);
   border-radius: 18px;
   overflow: hidden;
-  background: #111;
+  background: transparent;
 }
 
 .slide-image {
@@ -1089,7 +1086,10 @@ select {
 }
 
 .slide-nav-btn {
-  flex-shrink: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
   width: 44px;
   height: 44px;
   border: 1px solid #ececec;
@@ -1104,6 +1104,14 @@ select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.slide-nav-prev {
+  left: -56px;
+}
+
+.slide-nav-next {
+  right: -56px;
 }
 
 .slide-nav-btn:hover:not(:disabled) {
@@ -1128,6 +1136,10 @@ select {
     padding: 7rem 0 4rem;
   }
 
+  .project-detail-container {
+    padding: 0 20px;
+  }
+
   .project-detail h1 {
     font-size: 1.7rem;
   }
@@ -1145,13 +1157,18 @@ select {
     height: 480px;
   }
 
-  .slide-stage {
-    gap: 0.45rem;
+  .slide-nav-prev {
+    left: 8px;
+  }
+
+  .slide-nav-next {
+    right: 8px;
   }
 
   .slide-nav-btn {
     width: 36px;
     height: 36px;
     font-size: 1.45rem;
+    background: rgba(255, 255, 255, 0.92);
   }
 }
