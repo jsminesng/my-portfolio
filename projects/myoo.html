@@ -41,22 +41,19 @@
         </p>
 
         <div class="project-detail-actions">
-          <a href="#demo" class="project-detail-btn primary">Watch Demo</a>
-          <a href="#presentation" class="project-detail-btn">View PPT</a>
+          <a href="#presentation" class="project-detail-btn primary"
+            >View Presentation</a
+          >
         </div>
 
         <section class="project-detail-section" id="overview">
           <h2>Overview</h2>
           <p>
-            MYOO is a cross-platform mood journaling app that helps users track
-            emotions, write diary entries, and reflect through AI-assisted
-            conversation. The product combines personal journaling with
-            contextual emotional support powered by an LLM.
-          </p>
-          <p>
-            Users can go through onboarding, log moods, upload media, manage
-            profiles, and chat with an assistant that responds based on journal
-            context.
+            MYOO is a cross-platform mood journaling app that helps users record
+            emotions, write diary entries, and reflect through AI-powered
+            conversations. By combining personal journaling with contextual AI
+            responses, the app encourages users to better understand their
+            emotional patterns.
           </p>
         </section>
 
@@ -74,48 +71,86 @@
         <section class="project-detail-section" id="architecture">
           <h2>Architecture Diagram</h2>
           <figure class="architecture-figure">
-            <div class="media-placeholder tall">
-              Architecture diagram coming soon<br />
-              Add file to
-              <code>projects/assets/myoo/architecture.png</code>
-            </div>
+            <img
+              src="assets/myoo/system_architecture.png"
+              alt="MYOO system architecture diagram"
+            />
           </figure>
         </section>
 
         <section class="project-detail-section" id="erd">
           <h2>ERD</h2>
           <figure class="architecture-figure">
-            <div class="media-placeholder tall">
-              ERD coming soon<br />
-              Add file to <code>projects/assets/myoo/erd.png</code>
-            </div>
+            <img src="assets/myoo/erd.png" alt="MYOO ERD diagram" />
           </figure>
         </section>
 
         <section class="project-detail-section" id="system-flow">
-          <h2>System Flow</h2>
-          <div class="media-placeholder tall">
-            System flow diagram coming soon<br />
-            Add file to <code>projects/assets/myoo/system-flow.png</code>
-          </div>
+          <h2>Workflow</h2>
+          <figure class="architecture-figure">
+            <img src="assets/myoo/system_flow.png" alt="MYOO workflow" />
+          </figure>
           <ul class="flow-notes">
-            <li>User completes onboarding and creates a profile.</li>
-            <li>User logs emotions and writes journal entries.</li>
-            <li>Journal context is sent to Gemini-powered chat.</li>
+            <li>Users complete onboarding and create a profile.</li>
+            <li>Users record emotions and write journal entries.</li>
+            <li>Journal context is sent to the Gemini API.</li>
             <li>
-              The assistant returns contextual emotional support responses.
+              The AI assistant generates context-aware responses based on the
+              user's journal history.
             </li>
           </ul>
+        </section>
+
+        <section class="project-detail-section" id="product-walkthrough">
+          <h2>Product Walkthrough</h2>
+          <div class="phone-shot-grid phone-shot-grid-compact">
+            <figure class="phone-shot">
+              <img src="assets/myoo/home.png" alt="MYOO home screen" />
+              <figcaption class="screenshot-caption">
+                <strong>01 · Home</strong>
+                <span>Main journaling home experience</span>
+              </figcaption>
+            </figure>
+
+            <figure class="phone-shot phone-shot-group">
+              <div class="phone-shot-pair-grid">
+                <img src="assets/myoo/upload_1.png" alt="MYOO upload step 1" />
+                <img src="assets/myoo/upload_2.png" alt="MYOO upload step 2" />
+                <img src="assets/myoo/upload_3.png" alt="MYOO upload step 3" />
+                <img src="assets/myoo/upload_4.png" alt="MYOO upload step 4" />
+              </div>
+              <figcaption class="screenshot-caption">
+                <strong>02 · Upload</strong>
+                <span>Media upload flow for journal entries</span>
+              </figcaption>
+            </figure>
+
+            <figure class="phone-shot">
+              <img src="assets/myoo/AI_chat.png" alt="MYOO AI chat screen" />
+              <figcaption class="screenshot-caption">
+                <strong>03 · AI Chat</strong>
+                <span>Contextual emotional support conversation</span>
+              </figcaption>
+            </figure>
+
+            <figure class="phone-shot">
+              <img src="assets/myoo/profile.png" alt="MYOO profile screen" />
+              <figcaption class="screenshot-caption">
+                <strong>04 · Profile</strong>
+                <span>User profile and account settings</span>
+              </figcaption>
+            </figure>
+          </div>
         </section>
 
         <section class="project-detail-section" id="key-features">
           <h2>Key Features</h2>
           <ul>
             <li>Mood journaling and emotion tracking</li>
+            <li>AI-powered journal reflection chat</li>
             <li>Media uploads for diary entries</li>
-            <li>LLM-powered emotional support chat</li>
-            <li>Onboarding and profile management</li>
-            <li>Secure backend with Supabase Auth and RLS</li>
+            <li>User onboarding and profile management</li>
+            <li>Secure authentication and data protection with Supabase</li>
           </ul>
         </section>
 
@@ -123,20 +158,20 @@
           <h2>My Contributions</h2>
           <ul>
             <li>
-              Built a cross-platform mobile app with React Native, Expo,
-              TypeScript, and Supabase for journaling and AI reflection.
+              Developed a cross-platform mobile application using React Native,
+              Expo, TypeScript, and Supabase.
             </li>
             <li>
-              Designed application architecture and workflows for onboarding,
-              emotion tracking, diary creation, and profile management.
+              Implemented onboarding, mood tracking, diary creation, profile
+              management, and media upload features.
             </li>
             <li>
-              Integrated Gemini API for context-aware emotional support chat
-              based on journal entries.
+              Integrated the Gemini API to provide context-aware AI
+              conversations based on users' journal entries.
             </li>
             <li>
-              Implemented secure backend architecture with Supabase Auth,
-              PostgreSQL, Storage, and RLS.
+              Built backend functionality using Supabase Auth, Postgres,
+              Storage, and Row-Level Security (RLS).
             </li>
           </ul>
         </section>
@@ -145,16 +180,16 @@
           <h2>Challenges</h2>
           <ul>
             <li>
-              Designing journaling and chat flows that feel personal without
-              making the product feel intrusive.
+              Designing a journaling experience that felt simple and natural
+              while supporting AI-powered conversations.
             </li>
             <li>
-              Passing useful journal context into LLM conversations while
-              keeping the experience simple.
+              Passing relevant journal context to the AI without making
+              conversations overly complex.
             </li>
             <li>
-              Structuring mobile workflows and backend security for sensitive
-              personal content.
+              Managing authentication and secure storage for users' personal
+              journal data.
             </li>
           </ul>
         </section>
@@ -163,36 +198,59 @@
           <h2>What I Learned</h2>
           <ul>
             <li>
-              How to structure a React Native + Expo app around clear user
-              journeys.
+              Learned how to build a cross-platform mobile application using
+              React Native and Expo.
             </li>
             <li>
-              Practical patterns for combining journaling data with LLM-powered
-              conversational support.
+              Gained practical experience integrating AI features into a mobile
+              application using the Gemini API.
             </li>
             <li>
-              How Auth, Storage, and RLS help protect private user content in a
-              mobile product.
+              Improved my understanding of mobile authentication, file storage,
+              and access control with Supabase Auth, Storage, and RLS.
+            </li>
+            <li>
+              Learned how to structure and manage application state and
+              navigation in a React Native project.
             </li>
           </ul>
         </section>
 
-        <section class="project-detail-section" id="demo">
-          <h2>Demo Video</h2>
-          <div class="demo-figure">
-            <div class="media-placeholder tall">
-              Demo video coming soon<br />
-              Add file to <code>projects/assets/myoo/demo.mp4</code>
-            </div>
-          </div>
-        </section>
-
         <section class="project-detail-section" id="presentation">
-          <h2>Presentation (PPT)</h2>
-          <div class="resource-list">
-            <div class="resource-item">
-              <span>Project Presentation Deck</span>
-              <a href="#">Upload PPT / add link</a>
+          <h2>Presentation</h2>
+          <div
+            class="slide-viewer"
+            data-slide-prefix="assets/myoo/slides/slide-"
+            data-slide-count="15"
+          >
+            <div class="slide-stage">
+              <button
+                type="button"
+                class="slide-nav-btn slide-nav-prev"
+                data-slide-prev
+                aria-label="Previous slide"
+              >
+                ‹
+              </button>
+              <div class="slide-frame">
+                <img
+                  class="slide-image"
+                  src="assets/myoo/slides/slide-01.png"
+                  alt="MYOO presentation slide 1"
+                />
+              </div>
+              <button
+                type="button"
+                class="slide-nav-btn slide-nav-next"
+                data-slide-next
+                aria-label="Next slide"
+              >
+                ›
+              </button>
+            </div>
+            <div class="slide-counter">
+              <span data-slide-current>1</span> /
+              <span data-slide-total>15</span>
             </div>
           </div>
         </section>
@@ -204,5 +262,68 @@
         <p>&copy; 2026 Seungeun Song. All rights reserved.</p>
       </div>
     </footer>
+
+    <script>
+      document.querySelectorAll(".slide-viewer").forEach((viewer) => {
+        const prefix = viewer.dataset.slidePrefix;
+        const total = Number(viewer.dataset.slideCount || 0);
+        const image = viewer.querySelector(".slide-image");
+        const currentEl = viewer.querySelector("[data-slide-current]");
+        const totalEl = viewer.querySelector("[data-slide-total]");
+        const prevBtn = viewer.querySelector("[data-slide-prev]");
+        const nextBtn = viewer.querySelector("[data-slide-next]");
+        let index = 1;
+
+        const pad = (n) => String(n).padStart(2, "0");
+
+        const render = () => {
+          image.src = `${prefix}${pad(index)}.png`;
+          image.alt = `MYOO presentation slide ${index}`;
+          currentEl.textContent = String(index);
+          totalEl.textContent = String(total);
+          prevBtn.disabled = index <= 1;
+          nextBtn.disabled = index >= total;
+        };
+
+        prevBtn.addEventListener("click", () => {
+          if (index > 1) {
+            index -= 1;
+            render();
+          }
+        });
+
+        nextBtn.addEventListener("click", () => {
+          if (index < total) {
+            index += 1;
+            render();
+          }
+        });
+
+        viewer.addEventListener("keydown", (event) => {
+          if (event.key === "ArrowLeft") prevBtn.click();
+          if (event.key === "ArrowRight") nextBtn.click();
+        });
+
+        viewer.tabIndex = 0;
+        render();
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const targetId = link.getAttribute("href").slice(1);
+          const target = document.getElementById(targetId);
+          if (!target) return;
+
+          event.preventDefault();
+          const header = document.querySelector(".header");
+          const offset = (header ? header.offsetHeight : 0) + 24;
+          const top =
+            target.getBoundingClientRect().top + window.scrollY - offset;
+
+          window.scrollTo({ top, behavior: "smooth" });
+          history.replaceState(null, "", `#${targetId}`);
+        });
+      });
+    </script>
   </body>
 </html>
