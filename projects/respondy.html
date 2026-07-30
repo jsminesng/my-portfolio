@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Respondy | Seungeun Song</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo"><a href="../index.html">Seungeun Song</a></h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#education">Education</a></li>
+            <li><a href="../index.html#skills">Skills</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="project-detail">
+      <div class="project-detail-container">
+        <a href="../index.html#projects" class="project-back"
+          >← Back to Projects</a
+        >
+
+        <h1>Respondy – AI-powered Chat Assistant</h1>
+        <p class="project-detail-summary">
+          An AI-powered desktop application that analyzes chat screenshots and
+          provides context-aware reply suggestions using Google Gemini.
+        </p>
+
+        <div class="project-detail-actions">
+          <a href="#demo" class="project-detail-btn primary">Watch Demo</a>
+          <a href="#presentation" class="project-detail-btn">View PPT</a>
+        </div>
+
+        <section class="project-detail-section" id="overview">
+          <h2>Overview</h2>
+          <p>
+            Respondy is a desktop chat assistant that turns chat screenshots
+            into context-aware reply suggestions. Users upload screenshots,
+            review AI-generated responses, and keep conversation history for
+            faster follow-ups.
+          </p>
+          <p>
+            The product focuses on making everyday messaging workflows faster by
+            combining screenshot analysis with Gemini-powered response
+            generation in a desktop Electron app.
+          </p>
+        </section>
+
+        <section class="project-detail-section" id="tech-stack">
+          <h2>Tech Stack</h2>
+          <div class="project-tags">
+            <span class="project-tag">Electron</span>
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">React</span>
+            <span class="project-tag">JWT</span>
+            <span class="project-tag">REST API</span>
+            <span class="project-tag">Google Gemini</span>
+          </div>
+        </section>
+
+        <section class="project-detail-section" id="architecture">
+          <h2>Architecture Diagram</h2>
+          <figure class="architecture-figure">
+            <div class="media-placeholder tall">
+              Architecture diagram coming soon<br />
+              Add file to
+              <code>projects/assets/respondy/architecture.png</code>
+            </div>
+          </figure>
+        </section>
+
+        <section class="project-detail-section" id="erd">
+          <h2>ERD</h2>
+          <figure class="architecture-figure">
+            <div class="media-placeholder tall">
+              ERD coming soon<br />
+              Add file to <code>projects/assets/respondy/erd.png</code>
+            </div>
+          </figure>
+        </section>
+
+        <section class="project-detail-section" id="system-flow">
+          <h2>System Flow</h2>
+          <div class="media-placeholder tall">
+            System flow diagram coming soon<br />
+            Add file to
+            <code>projects/assets/respondy/system-flow.png</code>
+          </div>
+          <ul class="flow-notes">
+            <li>User uploads a chat screenshot from the desktop app.</li>
+            <li>Frontend sends the image to backend services via REST API.</li>
+            <li>
+              The backend analyzes the screenshot and generates reply
+              suggestions with Gemini.
+            </li>
+            <li>
+              Suggested replies and conversation history are shown in the UI.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="key-features">
+          <h2>Key Features</h2>
+          <ul>
+            <li>Screenshot upload and analysis</li>
+            <li>Context-aware reply suggestions</li>
+            <li>Conversation history</li>
+            <li>Desktop Electron experience</li>
+            <li>REST API integration with AI backend</li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="contributions">
+          <h2>My Contributions</h2>
+          <ul>
+            <li>
+              Developed the desktop frontend using Electron, Next.js, and React.
+            </li>
+            <li>
+              Built interfaces for screenshot upload, AI-generated reply
+              suggestions, and conversation history.
+            </li>
+            <li>
+              Integrated REST APIs for screenshot analysis and AI-generated
+              responses.
+            </li>
+            <li>
+              Designed responsive and intuitive UI for a smoother desktop
+              experience.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="challenges">
+          <h2>Challenges</h2>
+          <ul>
+            <li>
+              Turning screenshot-based chat context into useful reply
+              suggestions without making the UI feel complicated.
+            </li>
+            <li>
+              Connecting Electron frontend flows with backend APIs for analysis
+              and response generation.
+            </li>
+            <li>
+              Designing conversation history and suggestion UI that stays easy
+              to scan on desktop.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="learned">
+          <h2>What I Learned</h2>
+          <ul>
+            <li>
+              How Electron + Next.js + React can work together for a desktop AI
+              product.
+            </li>
+            <li>
+              Practical patterns for screenshot-driven workflows and REST API
+              integration.
+            </li>
+            <li>
+              How to shape AI response UX so suggestions feel actionable instead
+              of noisy.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="demo">
+          <h2>Demo Video</h2>
+          <div class="demo-figure">
+            <div class="media-placeholder tall">
+              Demo video coming soon<br />
+              Add file to <code>projects/assets/respondy/demo.mp4</code>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-detail-section" id="presentation">
+          <h2>Presentation (PPT)</h2>
+          <div class="resource-list">
+            <div class="resource-item">
+              <span>Project Presentation Deck</span>
+              <a href="#">Upload PPT / add link</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Seungeun Song. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

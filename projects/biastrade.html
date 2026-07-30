@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiasTrade | Seungeun Song</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo"><a href="../index.html">Seungeun Song</a></h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#education">Education</a></li>
+            <li><a href="../index.html#skills">Skills</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="project-detail">
+      <div class="project-detail-container">
+        <a href="../index.html#projects" class="project-back"
+          >← Back to Projects</a
+        >
+
+        <p class="project-detail-date">Oct 2025 – Dec 2025 (Irvine)</p>
+        <h1>BiasTrade – K-pop Photocard Trading Marketplace</h1>
+        <p class="project-detail-summary">
+          A K-pop photocard trading marketplace designed to support secure,
+          verified user-to-user transactions and real-world trading flows.
+        </p>
+
+        <div class="project-detail-actions">
+          <a
+            href="https://www.biastrade.com/home"
+            class="project-detail-btn primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Visit Live Site ↗</a
+          >
+          <a href="#demo" class="project-detail-btn">Watch Demo</a>
+          <a href="#presentation" class="project-detail-btn">View PPT</a>
+        </div>
+
+        <section class="project-detail-section" id="overview">
+          <h2>Overview</h2>
+          <p>
+            BiasTrade is a full-stack marketplace MVP for K-pop photocard
+            trading. The product focuses on secure authentication, image
+            uploads, and transaction flows so users can trade with more
+            confidence in a real-world marketplace setting.
+          </p>
+          <p>
+            The project explores how to combine a responsive frontend with
+            Supabase-backed auth, storage, and row-level security for safer
+            user-to-user trading experiences.
+          </p>
+        </section>
+
+        <section class="project-detail-section" id="tech-stack">
+          <h2>Tech Stack</h2>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">Supabase</span>
+            <span class="project-tag">Auth</span>
+            <span class="project-tag">PostgreSQL</span>
+            <span class="project-tag">Storage</span>
+            <span class="project-tag">RLS</span>
+          </div>
+        </section>
+
+        <section class="project-detail-section" id="architecture">
+          <h2>Architecture Diagram</h2>
+          <figure class="architecture-figure">
+            <img
+              src="assets/biastrade/system_architecture.png"
+              alt="BiasTrade system architecture diagram"
+            />
+          </figure>
+        </section>
+
+        <section class="project-detail-section" id="erd">
+          <h2>ERD</h2>
+          <figure class="architecture-figure">
+            <img src="assets/biastrade/erd.png" alt="BiasTrade ERD diagram" />
+          </figure>
+        </section>
+
+        <section class="project-detail-section" id="system-flow">
+          <h2>System Flow</h2>
+          <figure class="architecture-figure">
+            <img
+              src="assets/biastrade/system_flow.png"
+              alt="BiasTrade system flow"
+            />
+          </figure>
+          <ul class="flow-notes">
+            <li>User signs up / logs in through Supabase Auth.</li>
+            <li>User uploads photocard images and creates listings.</li>
+            <li>Trading and transaction flows are handled end-to-end.</li>
+            <li>
+              Storage policies and RLS protect user-owned data and media.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="key-features">
+          <h2>Key Features</h2>
+          <ul>
+            <li>Secure authentication</li>
+            <li>Photocard image uploads</li>
+            <li>User-to-user trading flows</li>
+            <li>Supabase-backed data and storage</li>
+            <li>Row-level security for access control</li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="contributions">
+          <h2>My Contributions</h2>
+          <ul>
+            <li>
+              Built and launched a full-stack marketplace MVP covering
+              authentication, image uploads, and transaction processes.
+            </li>
+            <li>
+              Developed a responsive frontend with React and Next.js, and
+              implemented backend logic with Supabase.
+            </li>
+            <li>
+              Designed secure image upload and access control using storage
+              policies and row-level security (RLS).
+            </li>
+            <li>
+              Used AI-assisted development tools to accelerate feature delivery
+              and streamline refactoring.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="challenges">
+          <h2>Challenges</h2>
+          <ul>
+            <li>
+              Modeling marketplace flows that feel simple for users while still
+              handling auth, media, and transaction states securely.
+            </li>
+            <li>
+              Configuring storage policies and RLS correctly so users only
+              access the data they should.
+            </li>
+            <li>
+              Shipping an MVP quickly without leaving major security gaps in
+              uploads and user-owned content.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="learned">
+          <h2>What I Learned</h2>
+          <ul>
+            <li>
+              How Supabase Auth, Postgres, Storage, and RLS work together in a
+              real product flow.
+            </li>
+            <li>
+              Practical frontend patterns for marketplace UX around listing,
+              uploading, and trading.
+            </li>
+            <li>
+              How to prioritize MVP scope while keeping the security model clear
+              and enforceable.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="demo">
+          <h2>Demo Video</h2>
+          <div class="demo-figure">
+            <video
+              class="demo-video"
+              controls
+              src="assets/biastrade/demo.mp4"
+            ></video>
+          </div>
+        </section>
+
+        <section class="project-detail-section" id="presentation">
+          <h2>Presentation</h2>
+          <div
+            class="slide-viewer"
+            data-slide-prefix="assets/biastrade/slides/slide-"
+            data-slide-count="20"
+          >
+            <div class="slide-stage">
+              <button
+                type="button"
+                class="slide-nav-btn slide-nav-prev"
+                data-slide-prev
+                aria-label="Previous slide"
+              >
+                ‹
+              </button>
+              <div class="slide-frame">
+                <img
+                  class="slide-image"
+                  src="assets/biastrade/slides/slide-01.png"
+                  alt="BiasTrade presentation slide 1"
+                />
+              </div>
+              <button
+                type="button"
+                class="slide-nav-btn slide-nav-next"
+                data-slide-next
+                aria-label="Next slide"
+              >
+                ›
+              </button>
+            </div>
+            <div class="slide-counter">
+              <span data-slide-current>1</span> /
+              <span data-slide-total>20</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Seungeun Song. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".slide-viewer").forEach((viewer) => {
+        const prefix = viewer.dataset.slidePrefix;
+        const total = Number(viewer.dataset.slideCount || 0);
+        const image = viewer.querySelector(".slide-image");
+        const currentEl = viewer.querySelector("[data-slide-current]");
+        const totalEl = viewer.querySelector("[data-slide-total]");
+        const prevBtn = viewer.querySelector("[data-slide-prev]");
+        const nextBtn = viewer.querySelector("[data-slide-next]");
+        let index = 1;
+
+        const pad = (n) => String(n).padStart(2, "0");
+
+        const render = () => {
+          image.src = `${prefix}${pad(index)}.png`;
+          image.alt = `BiasTrade presentation slide ${index}`;
+          currentEl.textContent = String(index);
+          totalEl.textContent = String(total);
+          prevBtn.disabled = index <= 1;
+          nextBtn.disabled = index >= total;
+        };
+
+        prevBtn.addEventListener("click", () => {
+          if (index > 1) {
+            index -= 1;
+            render();
+          }
+        });
+
+        nextBtn.addEventListener("click", () => {
+          if (index < total) {
+            index += 1;
+            render();
+          }
+        });
+
+        viewer.addEventListener("keydown", (event) => {
+          if (event.key === "ArrowLeft") prevBtn.click();
+          if (event.key === "ArrowRight") nextBtn.click();
+        });
+
+        viewer.tabIndex = 0;
+        render();
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const targetId = link.getAttribute("href").slice(1);
+          const target = document.getElementById(targetId);
+          if (!target) return;
+
+          event.preventDefault();
+          const header = document.querySelector(".header");
+          const offset = (header ? header.offsetHeight : 0) + 24;
+          const top =
+            target.getBoundingClientRect().top + window.scrollY - offset;
+
+          window.scrollTo({ top, behavior: "smooth" });
+          history.replaceState(null, "", `#${targetId}`);
+        });
+      });
+    </script>
+  </body>
+</html>

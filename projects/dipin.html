@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dipin | Seungeun Song</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo"><a href="../index.html">Seungeun Song</a></h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#education">Education</a></li>
+            <li><a href="../index.html#skills">Skills</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="project-detail">
+      <div class="project-detail-container">
+        <a href="../index.html#projects" class="project-back"
+          >← Back to Projects</a
+        >
+
+        <p class="project-detail-date">Jan 2026 – Current (Seoul)</p>
+        <h1>Dipin – AI-based Talent Evaluation Platform</h1>
+        <p class="project-detail-summary">
+          An AI-based talent evaluation platform that assesses real-world
+          problem-solving skills through scenario-based tasks and structured
+          evaluation reports.
+        </p>
+
+        <div class="project-detail-actions">
+          <a
+            href="https://www.dipin.io/"
+            class="project-detail-btn primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Visit Live Site ↗</a
+          >
+        </div>
+
+        <section class="project-detail-section" id="overview">
+          <h2>Overview</h2>
+          <p>
+            Dipin is an AI-driven platform designed to evaluate talent through
+            realistic scenario-based tasks rather than traditional resume
+            screening. Candidates solve practical problems while the system
+            collects interaction data, code submissions, and prompt logs to
+            generate structured evaluation reports.
+          </p>
+          <p>
+            The goal is to make hiring decisions more evidence-based by
+            measuring how people think, debug, and communicate in real
+            problem-solving situations.
+          </p>
+        </section>
+
+        <section class="project-detail-section" id="tech-stack">
+          <h2>Tech Stack</h2>
+          <div class="project-tags">
+            <span class="project-tag">FastAPI</span>
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">AWS</span>
+            <span class="project-tag">EC2</span>
+            <span class="project-tag">S3</span>
+            <span class="project-tag">API Gateway</span>
+            <span class="project-tag">Docker</span>
+          </div>
+        </section>
+
+        <section class="project-detail-section" id="architecture">
+          <h2>Architecture Diagram</h2>
+          <figure class="architecture-figure">
+            <img
+              src="assets/dipin/system_architecture.png"
+              alt="Dipin system architecture diagram"
+            />
+          </figure>
+        </section>
+
+        <section class="project-detail-section" id="erd">
+          <h2>ERD</h2>
+          <figure class="architecture-figure">
+            <img src="assets/dipin/erd.png" alt="Dipin ERD diagram" />
+          </figure>
+        </section>
+
+        <section class="project-detail-section" id="system-flow">
+          <h2>System Flow</h2>
+          <figure class="architecture-figure">
+            <img src="assets/dipin/system_flow.png" alt="Dipin system flow" />
+          </figure>
+          <ul class="flow-notes">
+            <li>User starts a scenario-based evaluation task.</li>
+            <li>
+              Frontend captures interactions, code submissions, and prompt logs.
+            </li>
+            <li>Backend APIs process the data and run evaluation pipelines.</li>
+            <li>
+              The system generates structured scoring and feedback reports.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="product-walkthrough">
+          <h2>Product Walkthrough</h2>
+          <div class="screenshot-grid">
+            <figure class="screenshot-item full">
+              <img src="assets/dipin/home.png" alt="Dipin home screen" />
+              <figcaption class="screenshot-caption">
+                <strong>01 · Landing</strong>
+                <span>Home — first impression of the product</span>
+              </figcaption>
+            </figure>
+
+            <figure class="screenshot-item">
+              <img src="assets/dipin/try_demo.png" alt="Dipin try demo screen" />
+              <figcaption class="screenshot-caption">
+                <strong>02 · Try Demo</strong>
+                <span>Interactive preview of the evaluation experience</span>
+              </figcaption>
+            </figure>
+
+            <figure class="screenshot-item">
+              <img src="assets/dipin/quick_demo.png" alt="Dipin quick demo screen" />
+              <figcaption class="screenshot-caption">
+                <strong>03 · Quick Demo</strong>
+                <span>Fast-track evaluation for rapid trials</span>
+              </figcaption>
+            </figure>
+
+            <figure class="screenshot-item">
+              <img
+                src="assets/dipin/full_challenge.png"
+                alt="Dipin full challenge screen"
+              />
+              <figcaption class="screenshot-caption">
+                <strong>04 · Full Challenge</strong>
+                <span>Deep scenario workspace for real assessments</span>
+              </figcaption>
+            </figure>
+
+            <figure class="screenshot-item">
+              <img
+                src="assets/dipin/full_challenge_submission.png"
+                alt="Dipin challenge submission screen"
+              />
+              <figcaption class="screenshot-caption">
+                <strong>05 · Submission</strong>
+                <span>Final submission and evaluation handoff</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="project-detail-section" id="key-features">
+          <h2>Key Features</h2>
+          <ul>
+            <li>Scenario-based talent evaluation tasks</li>
+            <li>Real-time scoring and analysis</li>
+            <li>Structured evaluation report generation</li>
+            <li>Code and prompt log processing pipelines</li>
+            <li>AWS-based production deployment</li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="contributions">
+          <h2>My Contributions</h2>
+          <ul>
+            <li>
+              Built full-stack features using FastAPI and Next.js to support
+              real-time scoring, analysis, and report generation.
+            </li>
+            <li>
+              Designed and deployed backend infrastructure on AWS (EC2, S3, API
+              Gateway, Docker) for scalable, production-ready architecture.
+            </li>
+            <li>
+              Implemented RESTful APIs and data pipelines to process
+              user-generated code and prompt logs for automated evaluation.
+            </li>
+            <li>
+              Accelerated development by orchestrating AI tools (Cursor, Claude,
+              Gemini) for rapid prototyping, refactoring, and debugging.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="challenges">
+          <h2>Challenges</h2>
+          <ul>
+            <li>
+              Designing evaluation flows that feel realistic while still
+              producing structured, comparable scoring data.
+            </li>
+            <li>
+              Building reliable pipelines for mixed input types such as code
+              logs, prompts, and report outputs.
+            </li>
+            <li>
+              Balancing fast iteration with production concerns like AWS
+              deployment, scalability, and maintainable API design.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-detail-section" id="learned">
+          <h2>What I Learned</h2>
+          <ul>
+            <li>
+              How to connect frontend product flows with backend evaluation
+              pipelines in an AI-native product.
+            </li>
+            <li>
+              Practical AWS deployment patterns for shipping a production-ready
+              service with Docker-based infrastructure.
+            </li>
+            <li>
+              How AI-assisted workflows can speed up prototyping without
+              sacrificing end-to-end ownership of the system.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Seungeun Song. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
